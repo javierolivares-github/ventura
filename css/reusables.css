@@ -1,0 +1,188 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* VARIABLES */
+:root {
+  /* Tipography */
+  --h1: 700 6.4rem/7.2rem 'Inter', sans-serif;
+  --h2: 600 5.6rem/6.4rem 'Inter', sans-serif;
+  --h3: 600 4.8rem/5.6rem 'Inter', sans-serif;
+  --h4: 600 4rem/4.8rem 'Inter', sans-serif;
+  --h5: 600 3.2rem/4rem 'Inter', sans-serif;
+  --h6: 600 2.4rem/3.2rem 'Inter', sans-serif;
+  --bodyLarge: 500 1.8rem/3.2rem 'Inter', sans-serif;
+  --bodyRegular: 500 1.6rem/2.4rem 'Inter', sans-serif;
+  --bodySmall: 400 1.4rem/2.4rem 'Inter', sans-serif;
+  --paragraph: 400 1.6rem/3.2rem 'Inter', sans-serif;
+
+  /* Colors */
+  --primary: #3A63F3;
+  --black: #071133;
+  --dark-blue: #172E7D;
+  --dark-gray: #797D88;
+  --gray: #E9E9E9;
+  --white: #fff;
+
+  /* Spacing 4pt*/
+  /* 2/4/8/12/16/20/24/32/40/48/56/64/72 */
+}
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* 1 rem = 10px (10px/16px = 0.625)*/
+  font-size: 62.5%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--black);
+}
+
+/* REUSABLE COMPONENTS */
+.logo {
+  display: inline-block;
+  width: 13.8rem;
+  height: 3.2rem;
+}
+
+.btn {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.2rem 2.0rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font: var(--bodyRegular);
+}
+
+.btn-outline {
+  color: var(--black);
+  background-color: transparent;
+}
+
+.play-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: var(--black);
+}
+
+.btn-primary {
+  color: var(--white);
+  background-color: var(--primary);
+  box-shadow: 0px 8px 12px rgba(48, 86, 218, 0.16);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.section-tag {
+  font: var(--bodyLarge);
+  color: var(--primary);
+  display: block;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font: var(--h3);
+  color: var(--black);
+}
+
+.section-copy {
+  font: var(--bodyLarge);
+  color: var(--black);
+  opacity: 50%;
+}
+
+.divisor {
+  height: 1px;
+  background-color: var(--gray);
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.list-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: var(--primary);
+}
+
+.list-text {
+  font: var(--bodyRegular);
+  color: var(--black);
+}
+
+.img-picture {
+  display: block;
+  width: 100%;
+  max-width: 54.4rem;
+}
+
+/* Feature-card component */
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 6.4rem 2.9rem;
+  background-color: var(--white);
+  border: 2px solid var(--gray);
+  border-radius: 0.8rem;
+  max-width: 35.2rem;
+  width: 100%;
+}
+
+.feature-icon {
+  display: block;
+  width: 3.6rem;
+  height: 3.3rem;
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--black);
+}
+
+.feature-title {
+  font: var(--h6);
+}
+
+.feature-copy {
+  font: var(--paragraph);
+  text-align: center;
+}
+
+/* Grid System */
+.grid {
+  display: grid;
+  gap: 3.2rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid--3-cols {
+  grid-template-columns: 1fr 1fr 1fr;
+}

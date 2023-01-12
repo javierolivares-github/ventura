@@ -1,0 +1,270 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/* BELOW 1120px */
+@media (max-width: 70em) {
+  html {
+    /* 1 rem = 9px (9px/16px = 0.5625)*/
+    font-size: 56.25%;
+  }
+}
+
+/* BELOW 960px */
+@media (max-width: 60em) {
+
+  /**************************/
+  /* NAVBAR */
+  /**************************/
+  #navbar {
+    padding: 2rem 3.2rem;
+  }
+
+  #navbar .menu {
+    display: none;
+  }
+
+  #navbar .btn {
+    display: none;
+  }
+
+  #navbar .menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    background-color: var(--primary);
+  }
+
+  #navbar .burger-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    color: var(--white);
+  }
+
+  /**************************/
+  /* HERO-SECTION*/
+  /**************************/
+  #hero {
+    padding: 5.6rem 4.8rem;
+  }
+
+  #hero .container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 4.8rem;
+  }
+
+  #hero .right {
+    display: flex;
+    justify-content: center;
+  }
+
+  #hero .hero-img {
+    max-width: 48rem;
+  }
+}
+
+/* BELOW 834px */
+@media (max-width: 52.125em) {
+  /**************************/
+  /* COMPANIES-SECTION*/
+  /**************************/
+
+  #companies {
+    padding: 5.6rem 3.2rem;
+  }
+
+  #companies .container {
+    gap: 4.8rem;
+  }
+
+  #companies .company-logo {
+    width: 90%;
+  }
+
+  /**************************/
+  /* FEATURES-SECTION*/
+  /**************************/
+  #section-features {
+    padding: 5.6rem 3.2rem;
+  }
+
+  #section-features .container {
+    gap: 3.2rem;
+    padding: 0 3.2rem;
+  }
+
+  #section-features .features {
+    width: 100%;
+  }
+
+  #section-features .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  #section-features .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  #section-features .feature-card {
+    max-width: 100%;
+  }
+
+  /**************************/
+  /* CHOOSEUS-SECTION*/
+  /**************************/
+  #section-chooseUs {
+    padding: 5.6rem 3.2rem;
+  }
+
+  #section-chooseUs .container {
+    flex-direction: column;
+  }
+
+  #section-chooseUs .left {
+    align-items: center;
+  }
+
+  #section-chooseUs .top {
+    align-items: center;
+    text-align: center;
+  }
+
+  /**************************/
+  /* DISCOVER-SECTION*/
+  /**************************/
+  #section-discover {
+    padding: 5.6rem 3.2rem;
+  }
+
+  /**************************/
+  /* FOOTER-SECTION*/
+  /**************************/
+  #footer {
+    padding: 5.6rem 3.2rem;
+  }
+
+  #footer .container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5.6rem;
+  }
+}
+
+/* BELOW 600px */
+@media (max-width: 37.5em) {
+
+  /**************************/
+  /* NAVBAR-SECTION*/
+  /**************************/
+  #navbar {
+    padding: 2rem 1.6rem;
+  }
+
+  /**************************/
+  /* HERO-SECTION*/
+  /**************************/
+  #hero {
+    padding: 4.8rem 1.6rem;
+  }
+
+  #hero .container {
+    gap: 6.4rem;
+  }
+
+  #hero .heading-primary {
+    font: var(--h2);
+  }
+
+  #hero .lead {
+    font: var(--bodyLarge);
+  }
+
+  #hero .hero-img {
+    max-width: 48rem;
+    width: 100%;
+  }
+
+  /**************************/
+  /* COMPANIES-SECTION*/
+  /**************************/
+  #companies {
+    padding: 4.8rem 1.6rem;
+  }
+
+  #companies .container {
+    gap: 4rem;
+    flex-direction: column;
+  }
+
+  #companies .company-logo {
+    width: 80%;
+  }
+
+  /**************************/
+  /* FEATURES-SECTION*/
+  /**************************/
+  #section-features {
+    padding: 4.8rem 1.6rem;
+  }
+
+  #section-features .container {
+    gap: 3.2rem;
+    padding: 0;
+  }
+
+  #section-features .title {
+    padding: 0 1.6rem;
+    text-align: center;
+  }
+
+  #section-features .features {
+    width: 100%;
+  }
+
+  .section-tag {
+    font: var(--bodyRegular);
+  }
+
+  .section-title {
+    font: var(--h4);
+  }
+
+  .feature-card {
+    max-width: 100%;
+  }
+
+  /**************************/
+  /* CHOOSEUS-SECTION*/
+  /**************************/
+  #section-chooseUs {
+    padding: 4.8rem 1.6rem;
+  }
+
+  /**************************/
+  /* DISCOVER-SECTION*/
+  /**************************/
+  #section-discover {
+    padding: 4.8rem 1.6rem;
+  }
+
+  #section-discover .discover-card {
+    padding: 3.2rem;
+  }
+
+  #section-discover .discover-title {
+    font: var(--h5);
+  }
+
+  /**************************/
+  /* FOOTER-SECTION*/
+  /**************************/
+  #footer {
+    padding: 4.8rem 1.6rem;
+  }
+
+  #footer .container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4.8rem;
+  }
+}
