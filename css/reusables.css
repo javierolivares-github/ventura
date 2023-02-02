@@ -60,6 +60,8 @@ html {
   border-radius: 0.8rem;
   cursor: pointer;
   font: var(--bodyRegular);
+  border: none;
+  outline: none;
 }
 
 .btn-outline {
